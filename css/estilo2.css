@@ -1,0 +1,17 @@
+:root{
+    --roxoinicio: rgb(220, 99, 247);
+    --roxoform: rgb(176, 89, 196);
+    --roxoafter: rgb(104, 45, 117);
+    --roxobtnhover: rgb(102, 0, 107);
+    --verdeclaro: rgb(141, 250, 138);
+    --verde: rgb(86, 230, 81);
+    --verdeescuro: rgb(50, 172, 45);
+    --azulinicio: rgb(79, 243, 255);
+    --azulbtn: rgb(79, 199, 255);
+    --azulbtnhover: rgb(5, 130, 189);
+    --branco: rgb(255, 255, 255);
+    --cinzaclaro: rgb(226, 226, 226);
+    --cinzaescuro: rgb(185, 185, 185);
+    --cinza: rgb(129, 129, 129);
+    --preto: rgb(0, 0, 0);
+}

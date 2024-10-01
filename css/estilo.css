@@ -1,0 +1,86 @@
+:root{
+    --roxoinicio: rgb(220, 99, 247);
+    --roxoform: rgb(176, 89, 196);
+    --roxoafter: rgb(80, 32, 91);
+    --roxobtnhover: rgb(61, 1, 65);
+    --verdeclaro: rgb(141, 250, 138);
+    --verde: rgb(86, 230, 81);
+    --verdeescuro: rgb(50, 172, 45);
+    --azulinicio: rgb(79, 243, 255);
+    --azulbtn: rgb(0, 174, 255);
+    --azulbtnhover: rgb(0, 131, 192);
+    --branco: rgb(255, 255, 255);
+    --cinzaclaro: rgb(226, 226, 226);
+    --cinzaescuro: rgb(185, 185, 185);
+    --cinza: rgb(129, 129, 129);
+    --preto: rgb(0, 0, 0);
+}
+
+h6 {
+    margin: 0;
+}
+
+.body1 {
+    margin: 0; /* Remove margens padrão */
+    min-height: 100vh; /* Garante que o body cubra toda a altura da visualização */
+    display: flex; /* Permite usar flexbox para centralizar conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    background: linear-gradient(180deg, var(--roxoinicio) 10%, var(--azulinicio) 100%);
+    background-size: cover; /* Garante que o gradiente cubra toda a área */
+    background-repeat: no-repeat; /* Evita a repetição do fundo */
+    color: var(--branco); /* Define a cor padrão do texto */
+}
+
+
+.Paicontrola{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controlaimg{
+    display: flex;           /* Define o contêiner como um flex container */
+    justify-content: center; /* Alinha horizontalmente os itens no centro */
+    align-items: center;     /* Alinha verticalmente os itens no centro */
+    height: 100vh;           /* Define a altura do contêiner para 100% da altura da viewport */
+    margin-right: 19rem ;
+}
+
+.controlaimg img {
+    height: 25rem;          /* Define a altura da imagem */
+}
+
+.controlatext{
+    margin: 5rem;
+    font-size: 3rem;
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra leve e suave */
+    flex-wrap: wrap;
+}
+
+.controlatext h5{
+    text-shadow: none;
+}
+
+.controlatext a{
+    text-decoration: none;
+    color: var(--roxoafter);
+    background-color: var(--azulbtn);
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    border: 1px solid rgb(0, 174, 255);
+    border-radius: 12px;
+    text-shadow: none;
+    font-size: 1rem;
+}
+
+.controlatext a:hover{
+    background-color: var(--azulbtnhover);
+    border: 1px solid rgb(0, 131, 192);
+    color: var(--roxobtnhover);
+    transition: all 0.5s;
+}
+
+a .cli_cadastrados{
+    background-color: blueviolet;
+}

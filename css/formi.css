@@ -1,0 +1,221 @@
+:root {
+  --roxo: rgb(179, 81, 204);
+}
+
+/* formi.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Cor de fundo opcional */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos do formulário */
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 50rem;
+  padding: 20px;
+  background-color: rgb(179, 81, 204);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Mantendo o ícone de olho no lugar fixo */
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Estilização das mensagens de erro */
+.error {
+  color: red;
+  font-size: 12px;
+  height: 16px; /* Define uma altura fixa para evitar que o layout se mova */
+  margin: 4px 0 0 0;
+  display: block; /* Garante que o espaço para a mensagem seja sempre reservado */
+}
+
+.botao {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.overlay-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.overlay-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a imagem no footer */
+.imagem {
+ 
+}
+
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: medium;
+  line-height: 1.25rem;
+  width: -webkit-fill-available;
+  border-radius: 5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos do controle */
+.controle {
+  display: flex; /* Usar flexbox para organizar */
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  margin-top: 1rem; /* Adiciona um espaço acima do controle */
+}
+
+/* Estilos do botão */
+.botao {
+  border: none;
+  border-radius: 5rem;
+  padding: 0.75rem 1.25rem; /* Tamanho do botão se ajusta ao conteúdo */
+  background-color: #478ec7;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: fit-content; /* Tamanho do botão se ajusta ao conteúdo */
+  cursor: pointer;
+}
+
+.signup-link {
+  color: #c8d0df;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-top: 0.5rem; /* Espaçamento entre o botão e o link */
+}
+
+.signup-link a {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute; /* Posiciona o rodapé de forma absoluta */
+  bottom: 0; /* Posiciona no fundo da tela */
+  right: 0; /* Posiciona no canto direito da tela */
+  display: flex; /* Define o layout do footer como flexbox */
+  justify-content: flex-end; /* Alinha o conteúdo horizontalmente à direita */
+  align-items: flex-end; /* Alinha o conteúdo verticalmente ao fundo */
+  height: 10rem; /* Ajuste conforme necessário */
+  width: 100%; /* Ajusta a largura do rodapé para ocupar toda a largura da tela */
+  margin: 0; /* Remover margens do rodapé */
+  padding: 1rem; /* Preenchimento opcional */
+}
+
+footer img {
+  height: 9rem; /* Ajuste conforme necessário */
+  margin-top: 1rem; /* Adiciona espaço acima da imagem para movê-la para baixo */
+}
+
+.error {
+  color: #00ffea;
+  font-size: 0.875em;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /* Centraliza o overlay */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  z-index: 1000; /* Fica sobre outros elementos */
+  display: none; /* Inicialmente oculto */
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.overlay-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  margin-top: 1em;
+}

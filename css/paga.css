@@ -1,0 +1,95 @@
+:root{
+    --roxoheaderhover: rgb(214, 0, 196);
+    --roxoinicio: rgb(220, 99, 247);
+    --roxoform: rgb(176, 89, 196);
+    --roxoafter: rgb(80, 32, 91);
+    --roxobtnhover: rgb(61, 1, 65);
+    --verdeclaro: rgb(141, 250, 138);
+    --verde: rgb(86, 230, 81);
+    --verdeescuro: rgb(50, 172, 45);
+    --azulinicio: rgb(79, 243, 255);
+    --azulbtn: rgb(0, 174, 255);
+    --azulbtnhover: rgb(0, 131, 192);
+    --branco: rgb(255, 255, 255);
+    --cinzaclaro: rgb(226, 226, 226);
+    --cinzaescuro: rgb(185, 185, 185);
+    --cinza: rgb(129, 129, 129);
+    --preto: rgb(0, 0, 0);
+}
+body {
+    margin: 0; /* Remove margens padrão */
+}
+
+header {
+    background: linear-gradient(180deg, var(--roxoinicio) 10%, var(--azulinicio) 100%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+header img {
+    width: 9rem;
+}
+
+header .imgp {
+    width: 3rem;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+}
+
+a:hover{
+    text-decoration:dotted;
+    color: var(--roxoheaderhover);
+    transition: all 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(106, 7, 219);
+}
+
+h1 {
+    text-align: center;
+    color: #af4fdb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #595a59;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    text-align: center;
+    color:#070707;
+}
+       
+th {
+    background-color: #af4fdb;
+}
+        
+tr:nth-child(even) {
+   background-color: #f9f9f9;
+}
